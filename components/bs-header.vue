@@ -1,7 +1,7 @@
 <template>
   <div class="navbar navbar-expand-lg fixed-top navbar-dark bg-primary">
     <div class="container">
-      <a href="/#" class="navbar-brand">Cole-Catherine</a>
+      <a href="/#" class="navbar-brand">Cole Catherine Art</a>
       <button
         class="navbar-toggler"
         type="button"
