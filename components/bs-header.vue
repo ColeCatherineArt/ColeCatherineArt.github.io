@@ -38,7 +38,7 @@
             </span>
           </li>
         </ul>
-        <form class="form-inline my-2 my-lg-0 text-right">
+        <form v-if="showThemePicker" class="form-inline my-2 my-lg-0 text-right">
           <theme-swapper></theme-swapper>
         </form>
       </div>
@@ -55,6 +55,7 @@ module.exports = {
   data: function () {
     return {
       showNav: false,
+      showThemePicker: false,
       links: [
         {
           name: 'Gallery',
