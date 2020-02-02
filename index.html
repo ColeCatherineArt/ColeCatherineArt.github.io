@@ -66,17 +66,19 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.4.1/lux/bootstrap.min.css" />
     <link rel="stylesheet" href="https://unpkg.com/vue-my-photos@1.0.4/dist/lightbox.css" />
     <style>
-      body {
-        padding-top: 100px;
-        padding-bottom: 100px;
-      }
       [v-cloak] {
         display: none;
       }
+      body {
+        padding-top: 140px;
+        padding-bottom: 100px;
+      }
+      /* Lux defines this as "bolder" which doesn't work with the font */
+      b,
+      strong {
+        font-weight: 900;
+      }
     </style>
-    <!--
-      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" />
-    -->
   </head>
   <body id="gallery">
     <div id="app" v-cloak></div>
