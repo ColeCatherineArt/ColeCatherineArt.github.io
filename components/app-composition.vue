@@ -38,7 +38,7 @@ module.exports = {
   methods: {
     getGitTree: function () {
       this.loading = true;
-      axios.get('https://api.github.com/repos/TheJaredWilcurt/cole-cat/git/trees/master?recursive=1')
+      axios.get('https://api.github.com/repos/ColeCatherineArt/ColeCatherineArt.github.io/git/trees/master?recursive=1')
         .then((response) => {
           this.allFiles = response.data.tree;
           this.networkError = false;
