@@ -21,8 +21,8 @@
         <ul class="navbar-nav">
           <li
             v-for="(link, linkIndex) in links"
-            :key="'navLink' + linkIndex"
             class="nav-item"
+            :key="'navLink' + linkIndex"
           >
             <a
               v-if="link.url"

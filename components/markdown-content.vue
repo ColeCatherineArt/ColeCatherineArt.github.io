@@ -5,6 +5,7 @@
       @dismissed="networkError = false"
     ></network-error>
     <loading-spinner v-if="loading"></loading-spinner>
+    <!-- eslint-disable-next-line vue/no-v-html -->
     <div v-html="content"></div>
   </div>
 </template>

@@ -9,8 +9,8 @@
         <option
           v-for="(filter, filterIndex) in filters"
           v-text="capitalizeFirstLetter(filter)"
-          :key="'filter' + filterIndex"
           :value="filter"
+          :key="'filter' + filterIndex"
         ></option>
       </select>
     </div>
@@ -19,11 +19,11 @@
       <template v-for="(image, imageIndex) in images">
         <img
           v-if="selectedFilter === 'all' || selectedFilter === image.filter"
-          :key="'image' + imageIndex"
           :src="image.thumbnail || image.name"
           :alt="image.alt"
           class="img-fluid img-thumbnail mb-3"
           @click="showLightbox(image.name)"
+          :key="'image' + imageIndex"
         />
       </template>
     </div>
